@@ -1,13 +1,13 @@
 def calculate_bonus(salary):
     if salary > 100000:
-        bonus = salary * 0.20
+        return salary * 0.20
     else:
-        bonus = salary * 0.10
-    return bonus
+        return salary * 0.10
 
-bonus_amount = calculate_bonus(50000)
-print("Bonus amount:", bonus_amount)
-#Bonus amount: 5000.0
+
+print(calculate_bonus(50000))
+print(calculate_bonus(150000))
+print(calculate_bonus(250000))
 
 
 def calculate_average(numbers):
@@ -20,6 +20,11 @@ print("Average:", avg)
 #Bonus amount: 5000.0
 #Average: 20.0
 
+def calculate_average(numbers):
+    return sum(numbers) / len(numbers)
+
+numbers = [10, 20, 30]
+print(calculate_average(numbers))
 
 num = int(input("How many salaries: "))
 salaries = []
